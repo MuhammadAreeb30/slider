@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Demo styles -->
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            width: 50px;
+        }
+
+        .slider-container {
+            width: 50%;
+            border: 1px solid black;
+            position: relative;
+            padding: 4rem 2rem;
+            border-radius: 20px;
+            background-color: black;
+        }
+
+        .slider-img-top img {
+            position: absolute;
+            right: 20px;
+        }
+
+        .slider-img-bottom img {
+            position: absolute;
+            left: 20px;
+            bottom: -17px;
+        }
+
+        h5 {
+            margin-top: -9px;
+            color: #E61E25;
+        }
+
+        p {
+            font-size: 0.9rem;
+        }
+
+        .swiper-horizontal>.swiper-pagination-bullets,
+        .swiper-pagination-bullets.swiper-pagination-horizontal,
+        .swiper-pagination-custom,
+        .swiper-pagination-fraction {
+            bottom: 20%;
+        }
+
+        .swiper-pagination-bullet {
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background-color: #fff;
+        }
+
+        .swiper-pagination-bullet-active {
+            width: 15px;
+            height: 15px;
+            background-color: #E61E25;
+        }
+
+        @media (max-width: 400px) {
+            img {
+                width: 10%;
+            }
+
+            .slider-container {
+                width: 70%;
+            }
+
+            .slider-img-top img {
+                top: 25px;
+            }
+
+            h2 {
+                font-size: 32px;
+            }
+
+            h5 {
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            .slider-img-bottom img {
+                bottom: 22px;
+            }
+
+            .swiper-horizontal>.swiper-pagination-bullets,
+            .swiper-pagination-bullets.swiper-pagination-horizontal,
+            .swiper-pagination-custom,
+            .swiper-pagination-fraction {
+                bottom: 5%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="slider-container">
+                    <div class="slider-img-top">
+                        <img src="https://filmzya.com/wp-content/uploads/2024/01/Vector-Smart-Object.png">
+                    </div>
+                    <h2>Kevin Anderson</h2>
+                    <h5>TikTok Content Creator</h5>
+                    <p>Absolutely thrilled with the transformation of my raw footage into a viral hit by Filmzya
+                        Productions! Their attention to detail and knack for creating engaging content is unmatched. My
+                        Instagram Reels have never looked better, and I've seen a real boost in my reach and engagement.
+                        Highly recommend their services!</p>
+                    <div class="slider-img-bottom">
+                        <img src="https://filmzya.com/wp-content/uploads/2024/01/Vector-Smart-Object-copy.png">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="slider-container">
+                    <div class="slider-img-top">
+                        <img src="https://filmzya.com/wp-content/uploads/2024/01/Vector-Smart-Object.png">
+                    </div>
+                    <h2>Kevin Anderson</h2>
+                    <h5>TikTok Content Creator</h5>
+                    <p>Absolutely thrilled with the transformation of my raw footage into a viral hit by Filmzya
+                        Productions! Their attention to detail and knack for creating engaging content is unmatched. My
+                        Instagram Reels have never looked better, and I've seen a real boost in my reach and engagement.
+                        Highly recommend their services!</p>
+                    <div class="slider-img-bottom">
+                        <img src="https://filmzya.com/wp-content/uploads/2024/01/Vector-Smart-Object-copy.png">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+</body>
+
+</html>
